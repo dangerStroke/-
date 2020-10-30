@@ -1,0 +1,231 @@
+.flex(@A, @B, @C, @D) {
+    display: flex;
+    flex-direction: @A;
+    justify-content: @B;
+    flex-wrap: @C;
+    align-items: @D;
+}
+
+.home_container {
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    // border: 1px solid red;
+    // overflow: hidden;
+    .menuItem {
+        margin-top: 24px;
+        .itemGroup {
+            width: 100%;
+            height: auto;
+            font-size: 14px;
+            font-weight: bold;
+            overflow: hidden;
+            transition: all .5s;
+            .ivu-icon{
+                line-height: 0;
+            }
+            .item {
+                width: 100%;
+                height: 46px;
+                padding: 15px 14px; 
+                cursor: pointer;
+                transition: all .5s;
+                span{
+                    font-size: 16px;
+                }
+                .activeIcon{
+                    color: #18AFFF;
+                }
+                .flex(row, space-between, nowrap, center);
+            }
+            .itemList {
+                // padding-left: 40px;
+                width: 100%;
+                height: 0;
+                // max-height: 0;
+                overflow: hidden;
+                transition: all .3s;
+                text-align: left;
+                p {
+                    font-size: 14px;
+                    padding: 9px 0;
+                    color: #8898aa;
+                    cursor: pointer;
+                }
+            }
+           
+        }
+        .act {
+            background-color: #f4f5f7;
+            .item {
+              span {
+                color: #18AFFF;
+              }
+            }
+            .itemList {
+                width: 100%;
+                // max-height: auto!important;
+                height: auto;
+                overflow: visible;
+                transition: all .3s;
+              }
+          }
+          .active_submenu{
+            background:rgba(232,235,240,1);
+            color: #18AFFF!important;
+            padding-left: 40px!important;
+            width: 100%;
+          }
+          .normal_submenu {
+            color:#000!important;
+            padding-left: 40px!important;
+            width: 100%;
+          }
+        }
+    .layout {
+        border: 1px solid #d7dde4;
+        background: #f5f7f9;
+        position: relative;
+        border-radius: 4px;
+        // overflow: hidden;
+    }
+
+    .layout-logo {
+        width: 100px;
+        height: 30px;
+        background: #5b6270;
+        border-radius: 3px;
+        float: left;
+        position: relative;
+        top: 15px;
+        left: 20px;
+    }
+
+    .layout-nav {
+        width: 420px;
+        margin: 0 45%;
+        margin-right: 20px;
+        color: #fff;
+        font-size: 24px;
+    }
+
+    .layout-header-bar {
+        background: #fff;
+        padding: 0;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        z-index: 20;
+        width: 100%;
+    }
+
+    .header-wapper {
+        display: flex;
+        /* align-tems: center; */
+        justify-content: space-between;
+        position: relative;
+        z-index: 1;
+        box-shadow: 0 2px 1px 1px rgba(100, 100, 100, 0.1);
+        background: #18AFFF;
+        color: #fff;
+    }
+
+    .header-left {
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+    }
+
+    .header-left-avatar {
+        width: 210px;
+    }
+
+    .header-left-avatar .user-name {
+        margin: 0 20px;
+    }
+
+    .header-title {
+        font-size: 18px;
+        font-weight: bold;
+        /* text-align: center; */
+    }
+
+    .header-right {
+        margin-right: 20px;
+        .editUser{
+            display: inline-block;
+            margin-right: 20px;
+        }
+    }
+
+    .btn-blue {
+        color: #fff;
+        font-size: 16px;
+        cursor: default;
+        .exit_icon{
+            margin-right: 10px;
+        }
+    }
+
+    .ivu-layout.ivu-layout-has-sider>.ivu-layout,
+    .ivu-layout.ivu-layout-has-sider>.ivu-layout-content {
+        padding: 24px;
+    }
+
+    .ivu-layout-sider {
+        min-height: calc(100vh - 67px);
+    }
+
+    .ivu-layout-sider-children {
+        margin-top: 16px !important;
+    }
+
+    .routa {
+        color: #000;
+    }
+
+    .ivu-menu-opened span .router-link-active {
+        color: #18AFFF;
+    }
+
+    .ivu-menu {
+        height: 100%;
+    }
+    .right_content{
+        // width: 100%;
+        width: calc(100% - 200px);
+        .bread_box{
+            margin-top: 24px;
+            width: 100%;
+            height: 30px;
+            padding: 0 24px;
+            text-align: left;
+            font-size: 18px;
+            cursor: default;
+        }
+    }
+}
+.editUser{
+    cursor: pointer;
+}
+
+.breadcrumb{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(245, 247, 249);;
+    position: absolute;
+    left: 224px;
+    height: 40px;
+    padding-left: 10px;
+    
+    .breadcrumb_item{
+        margin: 0 5px;
+        .text{
+            padding-left: 5px;
+            color: #999;
+            font-size: 13px;
+        }
+    }
+
+}

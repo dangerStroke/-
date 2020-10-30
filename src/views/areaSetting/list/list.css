@@ -1,0 +1,62 @@
+.list_container .btn_box {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+}
+.list_container .btn_box Button {
+  width: 100px;
+}
+.list_container .table_box .page_box {
+  margin-top: 40px;
+}
+.list_container .page_box {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.list_container .page_box .page_left {
+  width: 25%;
+  font-size: 12px;
+  color: #2d8cf0;
+  display: flex;
+  flex-direction: row;
+}
+.list_container .page_box .page_right {
+  width: 75%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.list_container .page_box .page_right .ivu-page-item-active {
+  border-color: #2d8cf0;
+}
+.delete_box .ivu-modal {
+  margin-top: 200px;
+}
+.delete_box .ivu-modal .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.delete_box .ivu-modal .footer .cancle_btn {
+  margin-right: 40px;
+}
+.delete_box .ivu-modal .footer Button {
+  width: 80px;
+}
+.delete_box .ivu-modal .ivu-modal-body {
+  text-align: center;
+}
+.delete_box .content {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 18px;
+  color: #333333;
+}
+.delete_box .ivu-modal-body {
+  text-align: center;
+}

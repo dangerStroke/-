@@ -1,0 +1,82 @@
+.flex(@A, @B, @C, @D) {
+	display: flex;
+	flex-direction: @A;
+	justify-content: @B;
+	flex-wrap: @C;
+	align-items: @D;
+}
+.list_container{
+    .btn_box{
+        margin-bottom: 20px;
+        Button{
+            width: 100px;
+        }
+        .flex(row, flex-end, nowrap, flex-end);
+    }
+    .table_box{
+        .img_box{
+            width: 120px;
+            height: 120px;
+            border: 1px dashed #DDDDDD;
+            margin: 20px auto;
+            overflow: hidden;
+            img{
+                width: 100px;
+                height: 100px;
+                margin: 10px auto;
+                display: block;
+            }
+        }
+        .page_box{
+            margin-top: 40px;
+        }
+    }
+    .page_box{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        .page_left{
+            width: 25%;
+            font-size: 12px;
+            color: #2d8cf0;
+            display: flex;
+            flex-direction: row;
+        }
+        .page_right{
+            width: 75%;
+            display: flex;
+            flex-direction: row-reverse;
+            .ivu-page-item-active{
+                border-color: #2d8cf0;
+            }
+        }
+    }
+}
+.delete_box{
+    .ivu-modal{
+        margin-top: 200px;
+    }
+    .ivu-modal{
+        .footer{
+            .flex(row, center, nowrap, center);
+            .cancle_btn{
+                margin-right: 40px;
+            }
+            Button{
+                width: 80px;
+            }
+        }
+        .ivu-modal-body{
+            text-align: center;
+        }
+    }
+    .content{
+        text-align: center;
+        padding: 40px 20px;
+        font-size: 18px;
+        color: #333333;
+    }
+    .ivu-modal-body{
+        text-align: center;
+    }
+}

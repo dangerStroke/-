@@ -1,0 +1,60 @@
+.flights_list .search_box {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.flights_list .search_box .search_left {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+.flights_list .search_box .search_left .search_single {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  margin-right: 30px;
+}
+.flights_list .search_box .search_right Button {
+  margin-left: 20px;
+}
+.flights_list .search_box .search_right .add_btn {
+  width: 100px;
+}
+.flights_list .btn_box {
+  padding: 15px;
+}
+.delete_box .ivu-modal {
+  margin-top: 200px;
+}
+.delete_box .ivu-modal .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.delete_box .ivu-modal .footer .cancle_btn {
+  margin-right: 40px;
+}
+.delete_box .ivu-modal .footer Button {
+  width: 80px;
+}
+.delete_box .ivu-modal .ivu-modal-body {
+  text-align: center;
+}
+.delete_box .content {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 18px;
+  color: #333333;
+}
+.delete_box .ivu-modal-body {
+  text-align: center;
+}

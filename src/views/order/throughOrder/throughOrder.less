@@ -1,0 +1,136 @@
+.flex(@A, @B, @C, @D) {
+	display: flex;
+	flex-direction: @A;
+	justify-content: @B;
+	flex-wrap: @C;
+	align-items: @D;
+}
+.throughOrder{
+    .search_box {
+        margin-bottom: 30px;
+        .search_left {
+            .flex(row, flex-start, nowrap, flex-start);
+            .search_single {
+                .flex(row, flex-start, nowrap, flex-start);
+                margin-right: 30px
+            }
+        }
+        .search_right{
+            Button{
+                margin-left: 20px;
+            }
+            .add_btn{
+                width: 100px;
+            }
+        }
+        .flex(row, space-between, nowrap, center)
+    }
+    .table_box{
+        .page_box{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            margin-top: 40px;
+            .page_left{
+                width: 25%;
+                font-size: 12px;
+                color: #2d8cf0;
+                display: flex;
+                flex-direction: row;
+            }
+            .page_right{
+                width: 75%;
+                display: flex;
+                flex-direction: row-reverse;
+                .ivu-page-item-active{
+                    border-color: #2d8cf0;
+                }
+            }
+        }
+    }
+}
+.delete_box{
+    .ivu-modal{
+        margin-top: 200px;
+    }
+    .ivu-modal{
+        .footer{
+            .flex(row, center, nowrap, center);
+            .cancle_btn{
+                margin-right: 40px;
+            }
+            Button{
+                width: 80px;
+            }
+        }
+        .ivu-modal-body{
+            text-align: center;
+        }
+    }
+    .content{
+        text-align: center;
+        padding: 40px 20px;
+        font-size: 18px;
+        color: #333333;
+    }
+    .ivu-modal-body{
+        text-align: center;
+    }
+}
+.detail_modal{
+    .content{
+        padding: 0px 30px;
+        .content_top{
+            .flex(row, flex-start, wrap, flex-start);
+            border-bottom: 1px dashed #dddddd;
+            .single{
+                width: 33.3%;
+                .flex(row, flex-start, nowrap, flex-start);
+                margin-bottom: 20px;
+                .single_left{
+                    width: 80px;
+                    text-align: left;
+                }
+            }
+        }
+        .content_bottom{
+            padding-top: 20px;
+            .flex(row, space-between, wrap, space-between);
+            .single{
+                // margin-right: 40px;
+                margin-bottom: 20px;
+                .flex(row, flex-start, nowrap, flex-start);
+                .single_left{
+                    margin-right: 20px;
+                }
+            }
+        }
+        .notice_box{
+            .flex(row, flex-start, nowrap, flex-start);
+            margin-bottom: 20px;
+            .notice_left{
+                margin-right: 20px;
+            }
+        }
+    }
+    .ivu-modal{
+        .footer{
+            .flex(row, center, nowrap, center);
+            .cancle_btn{
+                margin-right: 40px;
+            }
+            Button{
+                width: 80px;
+            }
+        }
+        .ivu-modal-body{
+            text-align: center;
+        }
+    }
+}
+.submitExcel{
+    background-color: #2d8cf0;
+    color: #FFF;
+    border: none;
+    float: left;
+  }

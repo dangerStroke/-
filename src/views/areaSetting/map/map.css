@@ -1,0 +1,73 @@
+.mapContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.mapContainer #map {
+  width: calc(100% - 380px);
+  height: 100%;
+}
+.mapContainer .map_content {
+  width: 360px;
+  height: 100%;
+}
+.mapContainer .map_content .search_box {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: initial;
+}
+.mapContainer .map_content .search_box .search_btn {
+  margin-left: 20px;
+}
+.mapContainer .map_content .search_box .result_box {
+  position: absolute;
+  top: 32px;
+  width: 300px;
+  max-height: 300px;
+  overflow-y: scroll;
+  left: 0;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.08);
+  z-index: 9999;
+  background: #ffffff;
+}
+.mapContainer .map_content .search_box .result_box .single_result {
+  width: 100%;
+  text-align: left;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.mapContainer .map_content .search_box .result_box .single_result .name {
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.mapContainer .map_content .search_box .result_box .single_result .detail {
+  font-size: 12px;
+}
+.mapContainer .map_content .coo_box {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+.mapContainer .map_content .coo_box Button {
+  margin-right: 20px;
+}
+.mapContainer .map_content .location_box {
+  margin-top: 30px;
+  text-align: left;
+}

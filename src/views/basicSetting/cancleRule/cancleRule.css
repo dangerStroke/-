@@ -1,0 +1,43 @@
+.cancle_box {
+  height: 100%;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.cancle_box .inner_box {
+  border: 1px dashed #999999;
+  padding: 80px 40px;
+  border-radius: 10px ;
+}
+.cancle_box .inner_box .cancle_single {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+.cancle_box .inner_box .cancle_single .ivu-input-wrapper {
+  width: 200px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.cancle_box .inner_box .cancle_single p {
+  line-height: 32px;
+}
+.cancle_box .inner_box .btn_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-top: 40px;
+}
+.cancle_box .inner_box .btn_box Button {
+  width: 80px;
+  margin-right: 40px;
+}

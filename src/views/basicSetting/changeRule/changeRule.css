@@ -1,0 +1,35 @@
+.change_box .search_box {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+}
+.change_box .search_box Button {
+  width: 100px;
+}
+.change_box .input_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+.change_box .input_box .ivu-input-wrapper {
+  width: 200px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.change_box .input_box Input {
+  width: 200px;
+}
+.change_box .input_box p {
+  text-overflow: nowrap;
+  line-height: 32px;
+}
+.change_box .input_box .change_time {
+  color: red;
+  padding: 0 8px;
+  font-size: 18px;
+}

@@ -1,0 +1,127 @@
+//去掉input type=number的上下箭头
+.flex(@A, @B, @C, @D) {
+	display: flex;
+	flex-direction: @A;
+	justify-content: @B;
+	flex-wrap: @C;
+	align-items: @D;
+}
+div{
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+  }
+  input[type="number"] {
+      -moz-appearance: textfield;
+  }
+}
+// 新建按钮的样式
+.new_site{
+    margin-bottom: 20px;
+    width: 100%;
+    height: 32px;
+    /deep/ button{
+       float: right;
+       width: 100px;
+   } 
+}
+//修改输入框的样式
+.edit{
+  margin-bottom: 20px;
+  width: 240px;
+  height: 32px;
+  padding-left: 10px;
+  margin-left: 10px;
+}
+.table_box{
+  .page_box{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 40px;
+    .page_left{
+        width: 25%;
+        font-size: 12px;
+        color: #2d8cf0;
+        display: flex;
+        flex-direction: row;
+    }
+    .page_right{
+        width: 75%;
+        display: flex;
+        flex-direction: row-reverse;
+        .ivu-page-item-active{
+            border-color: #2d8cf0;
+        }
+    }
+}
+}
+.pages{
+margin-top: 20px;
+}
+.edit_modal{
+  .ivu-modal{
+    top: 50%;
+    margin-top: -150px;
+    left: 50%;
+    margin-left: -260px;
+  }
+  .edit_box{
+    // .flex(column, center, nowrap, center);
+    .edit_single{
+      margin-bottom: 20px;
+      margin-left: 70px;
+      p{
+        line-height: 32px;
+        font-size: 16px;
+        margin-right: 15px;
+        width: 120px;
+      }
+      .inclued{
+        color: red;
+      }
+      .price_text{
+        margin-left: 10px;
+        width: auto;
+      }
+      .flex(row, flex-start, nowrap, flex-start);
+    }
+  }
+  .footer{
+    .flex(row, center, nowrap, center);
+    .cancle_btn{
+        margin-right: 40px;
+    }
+    Button{
+        width: 80px;
+    }
+}
+}
+.delete_box{
+  .ivu-modal{
+      margin-top: 200px;
+  }
+  .ivu-modal{
+      .footer{
+          .flex(row, center, nowrap, center);
+          .cancle_btn{
+              margin-right: 40px;
+          }
+          Button{
+              width: 80px;
+          }
+      }
+      .ivu-modal-body{
+          text-align: center;
+      }
+  }
+  .content{
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 18px;
+      color: #333333;
+  }
+  .ivu-modal-body{
+      text-align: center;
+  }
+}

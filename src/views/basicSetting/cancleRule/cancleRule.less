@@ -1,0 +1,38 @@
+.flex(@A, @B, @C, @D) {
+    display: flex;
+    flex-direction: @A;
+    justify-content: @B;
+    flex-wrap: @C;
+    align-items: @D;
+}
+.cancle_box{
+    height: 100%;
+    .inner_box{
+        border: 1px dashed #999999;
+        padding: 80px 40px;
+        border-radius:10px ;
+        .cancle_single{
+            width: 100%;
+            margin-bottom: 20px;
+            .ivu-input-wrapper {
+                width: 200px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            p{
+                line-height: 32px;
+            }
+            .flex(row, flex-start, nowrap, flex-start);
+        }
+        .btn_box{
+            .flex(row, center, nowrap, center);
+            margin-top: 40px;
+            Button{
+                width: 80px;
+                margin-right: 40px;
+            }
+        }
+    }
+    padding-top: 80px;
+    .flex(column, flex-start, nowrap, center);
+}

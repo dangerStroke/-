@@ -1,0 +1,87 @@
+.flex(@A, @B, @C, @D) {
+    display: flex;
+    flex-direction: @A;
+    justify-content: @B;
+    flex-wrap: @C;
+    align-items: @D;
+}
+
+.flightsEdit_box {
+    height: 100%;
+
+    .line_text {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+
+    .timer_box {
+        .single_timer {
+            padding: 20px;
+            border-radius: 10px;
+            width: 100%;
+            margin-bottom: 80px;
+            border: 1px dashed #999999;
+
+            .driver_info {
+                text-align: left;
+                font-size: 18px;
+                line-height: 40px;
+                font-weight: bold;
+                margin-bottom: 30px;
+
+                span {
+                    padding-right: 30px;
+                }
+            }
+
+            .single_inner {
+                .flex(row, space-between, nowrap, flex-start);
+
+                .timer_start {
+                    width: 49%;
+                    border-right: 1px dashed #999999;
+                    padding: 0 30px;
+
+                    .title {
+                        font-weight: bold;
+                        font-size: 18px;
+                        margin-bottom: 20px;
+                    }
+
+                    .timer_box {
+                        margin-bottom: 20px;
+                        .flex(row, space-between, nowrap, flex-start);
+
+                        .pick_uptime {
+                            line-height: 32px;
+                        }
+
+                        .delete_btn {
+                            color: red;
+                            cursor: default;
+                            line-height: 32px;
+                        }
+                    }
+
+                    .add_box {
+                        margin-top: 40px;
+                        margin-bottom: 20px;
+                    }
+                }
+
+                .timer_end {
+                    border-right: none;
+                }
+            }
+        }
+        .edit_btn{
+            Button{
+                width: 100px;
+                margin-right: 40px;
+            }
+            .flex(row, center, nowrap, center);
+        }
+    }
+}

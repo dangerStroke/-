@@ -1,0 +1,57 @@
+.commission_box {
+  height: 100%;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.commission_box .title {
+  font-size: 20px;
+  margin-bottom: 40px;
+  color: #18AFFF;
+}
+.commission_box .inner_box {
+  border: 1px dashed #999999;
+  padding: 100px 100px;
+  border-radius: 10px;
+}
+.commission_box .inner_box .cancle_single {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+.commission_box .inner_box .cancle_single .title_p {
+  width: 120px;
+}
+.commission_box .inner_box .cancle_single .ivu-input-wrapper {
+  width: 120px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.commission_box .inner_box .cancle_single p {
+  line-height: 32px;
+}
+.commission_box .inner_box .cancle_single Button {
+  margin-left: 30px;
+}
+.commission_box .inner_box .btn_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-top: 40px;
+}
+.commission_box .inner_box .btn_box Button {
+  width: 80px;
+  margin-right: 40px;
+}
+.commission_box .inner_box .btn_box .edit_btn {
+  margin-right: 0px;
+}

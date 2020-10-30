@@ -1,0 +1,128 @@
+.dispatchCenter{
+    .title{
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        .shu{
+            width:5px;
+            height: 16px;
+            background-color: #18AFFF;
+            margin-right: 8px;
+        }
+        h4{
+            font-size: 16px;
+            font-weight: bold;
+        }
+    }
+
+    .select_route{
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        .select_item{
+            margin-right: 20px;
+        }
+        .people_num{
+            font-size: 16px;
+            margin-right: 20px;
+            span{
+                color: #18AFFF;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .btns{
+        display: flex;
+        justify-content: left;
+        margin-bottom: 10px;
+        Button{
+            margin-right: 20px;
+        }
+    }
+
+    .route_time{
+        display: flex;
+        justify-content: left;
+        margin-bottom: 20px;
+        .route_time_item{
+            display: flex;
+            align-items: center;
+            padding: 4px 8px 4px 8px;
+            border: 1px solid #DCDFE6;
+            background-color: #F5F7F9;
+            cursor: pointer;
+            .order_num{
+                background-color: red;
+                font-size: 12px;
+                color: #fff;
+                border-radius: 50%;
+                margin-left: 5px;
+                padding: 0px 5px;
+            }
+        }
+        // 点击加上背景为白色
+        .click_bg{
+            background-color: #fff;
+        }
+    }
+
+  
+}
+.ModalBox {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    border-bottom: 1px dashed #000;
+    .boxLine {
+      display: flex;
+      justify-content: space-between;
+      .boxList {
+        display: flex;
+        flex-direction: column;
+        max-width: 33%;
+        flex: 1;
+        .listItem {
+          margin: 5px 0;
+          display: flex;
+        }
+      }
+    }
+  }
+
+//   导出内容样式
+  .export_class{
+    //   display: flex;
+    //   justify-content: left;
+    text-align: center;
+    .title_info{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 30px;
+       .info_item{
+           display: flex;
+           justify-content: center;
+           padding: 5px;
+           font-size: 16px;
+           color: #313333;
+           font-weight: bold;
+           p{
+              margin-right: 150px;
+           }
+       }
+    }
+    .export_btn{
+        width: 240px;
+        height: 44px;
+        line-height: 44px;
+        background-color: #19AFFF;
+        text-align: center;
+        color: #fff;
+        font-size: 16px;
+        position: absolute;
+        bottom: 100px;
+        left: 50%;
+        cursor: pointer;
+    }
+  }

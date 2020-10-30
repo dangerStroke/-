@@ -1,0 +1,74 @@
+div{
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+    input[type="number"] {
+        -moz-appearance: textfield;
+    }
+}
+.page_box{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 40px;
+    .page_left{
+        width: 25%;
+        font-size: 12px;
+        color: #2d8cf0;
+        display: flex;
+        flex-direction: row;
+    }
+    .page_right{
+        width: 75%;
+        display: flex;
+        flex-direction: row-reverse;
+        .ivu-page-item-active{
+            border-color: #2d8cf0;
+        }
+    }
+}
+.custom_search{
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    .inputMsg{
+        display: flex;
+        flex: 1;
+        justify-content: space-around;
+    }
+    .active{
+        flex: 1;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+.driver_model{
+    .upLoadimg{
+        display: flex;
+        .text{
+            color:#333;
+        }
+        .upload_img_css{
+            width: 130px;
+            height: 100px;
+            border: 1px dashed #666;
+            }
+            /deep/ .driver_model .ivu-upload img{
+                width: 130px;
+                height: 100px;
+            }
+    }
+    .carInfo{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .input_info{
+            margin-top: 20px;
+        }
+    }
+
+}
+
+

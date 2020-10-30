@@ -1,0 +1,46 @@
+.content{
+    width: 600px;
+    margin: auto;
+    p{
+        color: #18AFFF;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .main{
+        width: 600px;
+        border: 1px dashed #999;
+        padding-bottom: 20px;
+        .main_item{
+            padding: 20px;
+            // min-height: 50px;
+            text-align: left;
+            .ivu-checkbox-group-item{
+                min-width: 268px;
+            }
+            
+            span{
+                padding-right: 10px;
+            }
+            .coupon_num{
+                width: 73px;
+                text-align: center;
+            }
+        }
+        .main_item_btn{
+            text-align: center;
+            margin-top: 30px;
+            Button{
+                margin-left: 10px;
+            }
+        }
+        // .checkboxcss{
+        //     min-height: 100px;
+        // }
+    }
+    /deep/ .ivu-input, .ivu-input-default{
+        margin-bottom: 5px;
+        }
+}
+.content .main .main_item .coupon_num{
+    float: right;
+}

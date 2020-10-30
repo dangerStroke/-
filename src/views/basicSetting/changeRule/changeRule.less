@@ -1,0 +1,39 @@
+.flex(@A, @B, @C, @D) {
+    display: flex;
+    flex-direction: @A;
+    justify-content: @B;
+    flex-wrap: @C;
+    align-items: @D;
+}
+
+.change_box {
+    .search_box {
+        margin-bottom: 30px;
+        Button{
+            width: 100px;
+        }
+        .flex(row, flex-end,nowrap, flex-end);
+    }
+    .input_box {
+        .ivu-input-wrapper {
+            width: 200px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        Input {
+            width: 200px;
+        }
+
+        p {
+            text-overflow: nowrap;
+            line-height: 32px;
+        }
+
+        .change_time {
+            color: red;
+            padding: 0 8px;
+            font-size: 18px;
+        }
+        .flex(row, flex-start, nowrap, flex-start);
+    }
+}

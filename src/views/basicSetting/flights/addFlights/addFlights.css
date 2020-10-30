@@ -1,0 +1,128 @@
+.add_container .add_top {
+  height: 80px;
+  border-radius: 10px;
+  border: 1px dashed #999999;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+.add_container .add_top .search_single {
+  margin-right: 50px;
+  margin-top: 25px;
+}
+.add_container .add_top .search_single .driver_info {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.add_container .timerType_box {
+  height: 80px;
+  border-radius: 10px;
+  border: 1px dashed #999999;
+  padding: 0 30px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+.add_container .timerType_box .type_text {
+  line-height: 80px;
+}
+.add_container .timerType_box .radio_box {
+  line-height: 78px;
+  font-size: 18px;
+}
+.add_container .timerType_box .ivu-radio {
+  font-size: 18px!important;
+}
+.add_container .add_content {
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 1px dashed #999999;
+  padding: 40px 0 20px 0;
+}
+.add_container .add_content .single_timer {
+  width: 100%;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+.add_container .add_content .single_timer .timer_start {
+  width: 49%;
+  border-right: 1px dashed #999999;
+  padding: 0 30px;
+}
+.add_container .add_content .single_timer .timer_start .title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.add_container .add_content .single_timer .timer_start .timer_box {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+.add_container .add_content .single_timer .timer_start .timer_box .pick_uptime {
+  line-height: 32px;
+}
+.add_container .add_content .single_timer .timer_start .timer_box .delete_btn {
+  color: red;
+  cursor: default;
+  line-height: 32px;
+}
+.add_container .add_content .single_timer .timer_start .add_box {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.add_container .add_content .single_timer .timer_end {
+  border-right: none;
+}
+.add_container .add_content .btn_Box {
+  width: 100%;
+  margin-top: 40px;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+}
+.add_container .add_content .btn_Box Button {
+  width: 100px;
+  margin-left: 40px;
+}
+.add_container .add_content .single_week {
+  margin-bottom: 80px;
+  padding: 0 30px;
+  border-bottom: 1px dashed #999999;
+}
+.add_container .add_content .single_week .week_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+.add_container .date_box {
+  padding: 0 30px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+.add_container .date_box .ivu-input {
+  text-align: center;
+}

@@ -1,0 +1,111 @@
+.flex(@A, @B, @C, @D) {
+    display: flex;
+    flex-direction: @A;
+    justify-content: @B;
+    flex-wrap: @C;
+    align-items: @D;
+}
+.add_container{
+    .add_top{
+        height: 80px;
+        border-radius: 10px;
+        border: 1px dashed #999999;
+        padding: 0 30px;
+        .flex(row, flex-start, nowrap, flex-start);
+        .search_single{
+            margin-right: 50px;
+            margin-top: 25px;
+            .driver_info{
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+    }
+    .timerType_box{
+        height: 80px;
+        border-radius: 10px;
+        border: 1px dashed #999999;
+        padding: 0 30px;
+        margin-top: 20px;
+        .flex(row, flex-start, nowrap, flex-start);
+        .type_text{
+            // font-size: 18px;
+            line-height: 80px;
+        }
+        .radio_box{
+            line-height: 78px;
+            font-size: 18px;
+        }
+        .ivu-radio{
+            font-size: 18px!important;
+        }
+    }
+    .add_content{
+        margin-top: 20px;
+        border-radius: 10px;
+        border: 1px dashed #999999;
+        padding: 40px 0 20px 0;
+        .single_timer{
+            // margin-bottom: 20px;
+            width: 100%;
+            margin-bottom: 80px;
+            .flex(row, space-between, nowrap, flex-start);
+            .timer_start{
+                width: 49%;
+                border-right: 1px dashed #999999;
+                padding: 0 30px;
+                .title{
+                    font-weight: bold;
+                    font-size: 18px;
+                    margin-bottom: 20px;
+                }
+                .timer_box{
+                    margin-bottom: 20px;
+                    .flex(row, space-between, nowrap, flex-start);
+                    .pick_uptime{
+                        line-height: 32px;
+                    }
+                    .delete_btn{
+                        color: red;
+                        cursor: default;
+                        line-height: 32px;
+                    }
+                }
+                .add_box{
+                    margin-top: 40px;
+                    margin-bottom: 20px;
+                }
+            }
+            .timer_end{
+                border-right: none;
+            }
+        }
+        .btn_Box {
+            width: 100%;
+            margin-top: 40px;
+            padding-right: 30px;
+            .flex(row, flex-end, nowrap, flex-end);
+            Button{
+                width: 100px;
+                margin-left: 40px;
+            }
+        }
+        .single_week{
+            margin-bottom: 80px;
+            padding: 0 30px;
+            border-bottom: 1px dashed #999999;
+            .week_box{
+                .flex(row, flex-start, nowrap, flex-start);
+                margin-bottom: 40px;
+            }
+        }
+    }
+    .date_box{
+        padding: 0 30px;
+        margin-bottom: 40px;
+        .flex(row, flex-start, nowrap, flex-start);
+        .ivu-input{
+            text-align: center;
+        }
+    }
+}
