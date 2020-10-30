@@ -1,0 +1,148 @@
+
+{
+  "header": {
+    "reportVersion": 2,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200528.180356.9188.0.001.json",
+    "dumpEventTime": "2020-05-28T18:03:56Z",
+    "dumpEventTimeStamp": "1590660236008",
+    "processId": 9188,
+    "threadId": null,
+    "cwd": "D:\\HXworkspace\\backadmin\\miniadmin",
+    "commandLine": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\HXworkspace\\backadmin\\miniadmin\\node_modules\\worker-farm\\lib\\child\\index.js",
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\HXworkspace\\backadmin\\miniadmin\\build\\build.js"
+    ],
+    "nodejsVersion": "v12.16.2",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.16.2",
+      "v8": "7.8.279.23-node.34",
+      "uv": "1.34.2",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.4",
+      "http_parser": "2.9.3",
+      "openssl": "1.1.1e",
+      "cldr": "36.0",
+      "icu": "65.1",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.16.2/node-v12.16.2-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.16.2/node-v12.16.2.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.16.2/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.17763",
+    "osVersion": "Windows 10 Pro",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i5-9400F CPU @ 2.90GHz",
+        "speed": 2904,
+        "user": 13522921,
+        "nice": 0,
+        "sys": 8182421,
+        "idle": 281864046,
+        "irq": 2229953
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-9400F CPU @ 2.90GHz",
+        "speed": 2904,
+        "user": 7425734,
+        "nice": 0,
+        "sys": 3467640,
+        "idle": 292675750,
+        "irq": 48156
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-9400F CPU @ 2.90GHz",
+        "speed": 2904,
+        "user": 11326375,
+        "nice": 0,
+        "sys": 4028562,
+        "idle": 288214187,
+        "irq": 42453
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-9400F CPU @ 2.90GHz",
+        "speed": 2904,
+        "user": 5790187,
+        "nice": 0,
+        "sys": 3047546,
+        "idle": 294731390,
+        "irq": 46875
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-9400F CPU @ 2.90GHz",
+        "speed": 2904,
+        "user": 6812281,
+        "nice": 0,
+        "sys": 3475812,
+        "idle": 293281031,
+        "irq": 51468
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-9400F CPU @ 2.90GHz",
+        "speed": 2904,
+        "user": 6015078,
+        "nice": 0,
+        "sys": 3482984,
+        "idle": 294071062,
+        "irq": 48328
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "以太网",
+        "internal": false,
+        "mac": "b4:2e:99:d9:f4:a5",
+        "address": "fe80::4440:ac31:d925:8e88",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 4
+      },
+      {
+        "name": "以太网",
+        "internal": false,
+        "mac": "b4:2e:99:d9:f4:a5",
+        "address": "192.168.0.111",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "vEthernet (Default Switch)",
+        "internal": false,
+        "mac": "62:15:21:0d:0f:94",
+        "address": "fe80::f191:daa3:7d54:dee9",
+        "netm
